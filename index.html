@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college admission form</title>
+<!-- cdn add from bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-8 offset-2" >
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">College Admission Form</h3>
+                </div>
+                <div class="card-body">
+                    <!-- <form action="/action_page.php"> -->
+                        <div class="mb-3 mt-3">
+                          <label for="name" class="form-label">Name:</label>
+                          <input type="name" class="form-control" id="name" placeholder="Enter name" name="name">
+                        </div>
+
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                          </div>
+
+                          <div class="mb-3 mt-3">
+                            <label for="phonenumber" class="form-label">phonenumber:</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Enter phonenumber" name="phonenumber">
+                          </div>
+
+                          <div class="mb-3 mt-3">
+                            <label for="gender" class="form-label">Gender:</label>
+                            <input type="radio" class="form-check-input" id="gender" id="gender" name="gender" value="Male">Male
+                            <input type="radio" class="form-check-input" id="gender" id="gender" name="gender" value="Female">Female
+                          </div>
+
+                          <div class="mb-3 mt-3">
+                            <label for="program" class="form-label">Area of Interest:</label>
+                            <select name="program" id="program" class="form-control">
+                                <option selected>Choose your program</option>
+                                <option value="B.Tech">B.Tech</option>
+                                <option value="M.Tech">M.Tech</option>
+                                <option value="BCA">BCA</option>
+                                <option value="MCA">MCA</option>
+                                <option value="BBA">BBA</option>
+                                <option value="MBA">MBA</option>
+                            </select>
+                          </div>
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                          </div>
+
+                          <button type="submit" onclick="displayData()" class="btn btn-primary">Submit</button>
+                          <hr>
+                          <hr>
+                          <h3 class="card-title">Display Data</h3>
+                          <table class="table table-striped table-bordered table-hover" id="displayArea"></table>
+                        <!-- <div class="mb-3">
+                          <label for="pwd" class="form-label">Password:</label>
+                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                        </div>
+                         -->
+                         <!-- <div class="form-check mb-3">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                          </label>
+                        </div>  -->
+                        
+                      <!-- </form> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
